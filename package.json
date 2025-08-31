@@ -1,0 +1,17 @@
+{
+  "name": "kosmoswriter-deliverable",
+  "module": "index.ts",
+  "license": "MIT",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@azure/cosmos": "^4.5.0",
+    "@azure/service-bus": "^7.9.5",
+    "uuid": "^11.1.0"
+  }
+}
