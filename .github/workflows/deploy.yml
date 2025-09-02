@@ -20,6 +20,8 @@ jobs:
           username: ${{ secrets.VM_USER }}
           key: ${{ secrets.VM_SSH_KEY }}
           script: |
+            az login --identity
+            az acr login -n bluereceiver
             cd ~
             docker compose pull
             docker compose up -d
